@@ -9,11 +9,22 @@ Anchana Fatimarajan, Keren Kelis, Alina Zhyla , Loana Chalach
 
 # Pour tester
 Login etudiant: c.loana 
+
 mdp etudiant: lolo
 
-Admin : 
+Backoffice admin :
+
 login: Admin
+
 mdp: administrateur2024*
+
+Backoffice professeur:
+
+login: e.renaud
+
+mdp: devback
+
+
 
 
 # Étape 1:
