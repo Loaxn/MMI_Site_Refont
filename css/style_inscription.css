@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800;900&display=swap');
+
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+.logo-0 img,
+.logo-1 img {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    height: 25px;
+}
+
+.logo-0 img:nth-child(2),
+.logo-1 a:nth-child(2) {
+    display: none;
+}
+
+#custom-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    background-color: var(--bg);
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+#custom-popup p {
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#custom-popup {
+    animation: fadeIn 0.5s ease-in-out;
+    /* Apply the animation to the popup */
+}
+
+/* Page index.php */
+
+.main-1 {
+    background: linear-gradient(90deg, rgba(92, 45, 203, 1) 13%, rgba(94, 74, 250, 1) 100%);
+    min-height: 100vh;
+}
+
+
+.information_main {
+    padding: 8rem 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.information_main h1 {
+    font: 900 1.25rem "Inter", sans-serif;
+    padding-bottom: 1.5rem;
+
+}
+
+.information_main h2 {
+    font: 800 0.75rem "Inter", sans-serif;
+    padding-bottom: 1rem;
+}
+
+.information_main p {
+    font-size: 0.75rem;
+    padding-bottom: 1.5rem;
+}
+
+.links-container a {
+    background-color: black;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.7rem;
+    transition: background-color 0.3s ease;
+}
+
+.links-container a:hover {
+    background-color: rgba(0, 0, 0, 0.475);
+}
+
+.image1 img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+footer {
+    margin-top: 0 !important;
+}
+
+
+
+/* Page connexion.php */
+
+.main-2 {
+    background-color: #F5F6FB;
+    min-height: 100vh;
+    color: black;
+}
+
+form {
+    background-color: #fff;
+    padding: 2.5rem;
+    height: 460px;
+    width: 50vw;
+    margin: 5rem auto 2rem;
+    border-radius: 20px;
+
+}
+
+form h1 {
+    font-size: 1.25rem;
+}
+
+.image2 {
+    position: relative;
+    bottom: 75px;
+    width: 260px;
+    left: 3rem;
+}
+
+
+
+
+form a {
+    color: var(--purple);
+}
+
+input {
+    border-radius: 9px;
+    margin-bottom: 2rem;
+}
+
+.bouton1 input,
+.bouton1 button {
+    cursor: pointer;
+    background-color: var(--purple);
+    border: 1px solid transparent;
+    color: #fff;
+    padding: 0.938rem;
+    font-size: 1.2rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    border-radius: 9px;
+}
+
+.bouton1 input:hover,
+.bouton1 button:hover {
+    background-color: #000000;
+}
+
+
+.bouton2 {
+    border: 1px solid #292929;
+    padding: 0.938rem 0 0.938rem 0.938rem;
+    margin-top: 10px;
+    width: 90%;
+
+}
+
+form p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+
+@media screen and (min-width: 425px) {
+
+    .information_main {
+        padding: 7rem 6rem;
+    }
+
+    .bouton2 {
+        width: 95%;
+
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+
+    .image1 img {
+        width: 60%;
+        float: right;
+        position: absolute;
+        right: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .image1 img {
+        width: 50%;
+    }
+
+    .information_main h1 {
+        font: 900 2rem "Inter", sans-serif;
+
+    }
+
+    .information_main h2 {
+        font: 800 1.25rem "Inter", sans-serif;
+        letter-spacing: 0.3px;
+        width: 60vw;
+    }
+
+    .information_main p {
+        font-size: 1rem;
+        font-weight: 300;
+        width: 60vw;
+        letter-spacing: 1px;
+    }
+
+    .image2 {
+        bottom: 99px;
+        left: 9rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .information_main {
+        padding: 11rem 7rem;
+    }
+
+    .logo-0 img:first-child,
+    .logo-1 a:first-child {
+        display: none;
+    }
+
+    .logo-0 img:nth-child(2),
+    .logo-1 a:nth-child(2) {
+        display: block;
+        margin: 0;
+    }
+
+    .logo-0 img:nth-child,
+    .logo-1 img:nth-child(2) {
+        left: 5rem;
+        top: 2.5rem;
+    }
+
+    .image1 img {
+        width: 500px;
+        right: 2rem;
+    }
+
+    .information_main h2,
+    .information_main p {
+        width: 45vw;
+    }
+
+    .formulaire {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    form,
+    .image2 {
+        width: 45vw;
+        min-height: 90vh;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 4rem 3rem 0rem 3rem;
+        margin: 0;
+        border-radius: 0;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    form h1 {
+        font-size: 2rem;
+    }
+
+    .bouton2 {
+        height: 2rem;
+    }
+
+    .image2 img {
+        width: 20vw;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    form p {
+        width: 500px;
+    }
+
+}

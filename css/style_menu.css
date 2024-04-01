@@ -1,0 +1,218 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --Leviolet: #4038b7;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F4F7FE;
+}
+.shadow {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+}
+.shadow::after{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+}
+.shadow::before {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
+}
+.border {
+    border: solid #F4F7FE !important;
+    opacity: 1;
+}
+.main {
+    max-width: 1100px;
+    margin: auto;
+}
+/* PAGE MENU */
+.card {
+    /* color: white; */
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+}
+.today img {
+    height: 9rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.today h3 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+.entre {
+    margin-top: 20px !important;
+}
+
+.date {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.date button {
+    position:relative !important;
+}
+
+/* DESKTOP */
+.desktop {
+    display: none;
+    gap: 30px;
+}
+.desktop .card {
+    height: 94%;
+    max-height: 628px;
+}
+.menu_ajd {
+    width: 35%;
+    min-width: 250px;
+}
+.menu_autre {
+    width: 100%;
+    min-width: 220px;
+    padding-bottom:15px ;
+}
+.violet {
+    background-color: var(--Leviolet);
+    color: white;
+    border: none;
+}
+.btn {
+    background-color: var(--Leviolet);
+    color: white;
+    max-width: 180px;
+    border-radius: 15px;
+    border: none;
+    padding: 0.75rem;
+    width: 30%;
+    margin-bottom: 10px;
+    min-width: fit-content;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: black;
+}
+.delete {
+    background-color: rgb(252, 65, 65);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: solid 3px white;
+    min-width: fit-content;
+}
+.menu_autre .card {
+    height: fit-content;
+}
+.menu_autre img {
+    height: 6rem;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.menu_autre p {
+margin: 0 !important;
+}
+.tous_les_menu {
+    width: 80%;
+}
+h2 {
+    margin: 0 !important;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)); /* Adjust the width as needed */
+    gap: 20px;
+}
+
+@media screen and (min-width: 769px) {
+    .desktop {
+        display: flex;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+/* Le POP-UP */
+.pop_up {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.693);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}
+.pop_up .card {
+    width: 35%;
+    color: black;
+}
+
+/* Fermer le pop up quand on reduit la taille de l'écran */
+@media screen and (max-width: 769px) {
+    .pop_up {
+        display: none !important;
+    }
+}
+
+/* LE CAROUSEL SUR MOBILE */
+.carousel_wrap {
+    width: 90vw;
+    overflow: hidden;
+    position: relative;
+    height: 85vh;
+    border-radius: 15px;
+    margin: auto;
+}
+.carousel {
+    border-radius: 15px;
+    left: 0;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    transition: left 0.6s ease-out;
+}
+
+.carousel-item {
+    width: 90vw;
+    flex: 0 0 auto;
+}
+.carousel .card {
+    height: 100%;
+}
+.mobile button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 10%;
+}
+.carousel_gauche {
+    left: 0;
+}
+.carousel_droite{
+    right: 0;
+}
