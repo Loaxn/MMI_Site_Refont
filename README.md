@@ -8,8 +8,12 @@ Afin de réinstaller un site et une base de données sur un serveur local XAMPP,
 Anchana Fatimarajan, Keren Kelis, Alina Zhyla , Loana Chalach
 
 # Pour tester
-Login etudiant: c.loana
+Login etudiant: c.loana 
 mdp etudiant: lolo
+
+Admin : 
+login: Admin
+mdp: administrateur2024*
 
 
 # Étape 1:
