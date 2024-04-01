@@ -7,6 +7,10 @@ Afin de réinstaller un site et une base de données sur un serveur local XAMPP,
 # Contributeurs
 Anchana Fatimarajan, Keren Kelis, Alina Zhyla , Loana Chalach
 
+# Pour tester
+Login etudiant: c.loana
+mdp etudiant: lolo
+
 
 # Étape 1:
 Lancer le programme XAMPP et cliquer sur "start" pour exécuter les services Apache et MySQL.
