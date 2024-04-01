@@ -1,7 +1,12 @@
+# Contexte
 Dans le cadre d'un projet universitaire, nous devions réaliser un site de réservation.
 Voici le lien public de ce dernier: https://espacemmichamps.fr/
 
 Afin de réinstaller un site et une base de données sur un serveur local XAMPP, en précisant l'URL locale à utiliser pour y accéder, voici les étapes à suivre:
+
+# Contributeurs
+Anchana Fatimarajan, Keren Kelis, Alina Zhyla , Loana Chalach
+
 
 # Étape 1:
 Lancer le programme XAMPP et cliquer sur "start" pour exécuter les services Apache et MySQL.
